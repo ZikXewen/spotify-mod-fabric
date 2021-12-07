@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "spotify",
+  "version": "${version}",
+  "name": "Spotify Mod (Fabric)",
+  "description": "An attempt to integrate Spotify into Minecraft. Powered by Fabric Language Kotlin.",
+  "authors": [
+    "ZikXewen"
+  ],
+  "license": "LGPL",
+  "icon": "assets/spotify/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "zikxewen.spotify.SpotifyMod"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "fabric-language-kotlin": ">=1.7.0+kotlin.1.6.0",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
